@@ -21,3 +21,4 @@ channel++;
 
 public class가 있는 경우 소스파일의 이름은 반드시 public에 맞춘다 
 
+static이란 메모리가 시작될떄 자리를 받음

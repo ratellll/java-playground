@@ -12,8 +12,6 @@ public class PersonTest2 {
 
         System.out.println(p1.name);
         System.out.println(p2.name);
-        System.out.println(p1.count);
-        p1.count++;
-        System.out.println(p2.count);
+
     }
 }

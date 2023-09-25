@@ -11,11 +11,6 @@ public class PersonTest3 {
 
         p1.printName();
         p2.printName();
-
-        Person.count++;
-
-        p1.printCount();
-        p2.printCount();
     }
 
 
