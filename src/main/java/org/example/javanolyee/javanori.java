@@ -1,4 +1,4 @@
-package org.example;
+package org.example.javanolyee;
 
 import java.util.Random;
 
