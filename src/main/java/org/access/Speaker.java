@@ -2,7 +2,7 @@ package org.access;
 
 public class Speaker {
 
-    int volume;
+    private int volume;
 
 
     Speaker(int volume) {
