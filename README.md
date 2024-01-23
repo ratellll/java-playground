@@ -82,3 +82,58 @@ final 의 참조 대상의 객체값은 변경할수있다 ex) public으로 만�
 
 
 상속이란 부모에게서 공통적인 기능을 부여받는것이라고 생각하는게 좋다
+상속은 확장의 개념이라고 생각하면된다  
+부모의 기능 + 새로운 클래스의 기능을 사용하는것이니 확장이라고생각하면된다
+상속을 받은 클래스를 생성하면 부모도 인스턴스가 생성된다
+- 필드와 메서드만 물려받는게아님 
+
+
+만약 부모의 기능이 맘에들지않아 자식이 새로 정의하는걸 메서드 오버라이딩 이라고 한다 
+@Override 어노테이션을 사용하여 혹시나 모를 오류를 방지한다
+
+
+* 메서드 오버로딩 : 메서드 이름이 같고 매개변수(파라미터)가 다른 메서드를 여러개 정의하는것을 메서드 오버로딩 이라고 한다 .
+- 오버로딩은 번역하면 과적인데 , 과하게 물건을 담았다는뜻. 따라서 같은 이름의 메서드를 여러개 정의했다고 이해하면된다.
+- ex)    // 정수형 매개변수를 받는 메소드
+  public static int add(int a, int b) {
+  return a + b;
+  }
+
+  // 실수형 매개변수를 받는 메소드
+  public static double add(double a, double b) {
+  return a + b;
+  }
+
+  // 문자열을 이어붙이는 메소드
+  public static String add(String a, String b) {
+  return a + b;
+  }
+
+
+* 메서드 오버라이딩 : 메서드 오버라이딩은 하위클래스(자식) 에서 상위클래스(부모) 의 메서드를 재정의한다는말이다.
+- 따라서 상속관계에서 사용한다.
+- 부모의 기능을 자식이 다시 정의하는것이다.
+  - Ex)// 부모 클래스
+            class Animal {
+    // 메소드 정의
+    void makeSound() {
+    System.out.println("Some generic sound");
+ 
+
+// 자식 클래스
+class Dog extends Animal {
+// 메소드 오버라이딩
+@Override
+void makeSound() {
+System.out.println("Bark! Bark!");
+ 
+
+// 다른 자식 클래스
+class Cat extends Animal {
+// 메소드 오버라이딩
+@Override
+void makeSound() {
+System.out.println("Meow! Meow!");
+ 
+
+
