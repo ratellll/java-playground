@@ -12,7 +12,7 @@ public class Method1 {
 
     public static int add(int a, int b) {
         int sum = a + b;
-        return sum;
+        return sum; // 반환타입을 맞춰야함
     }
 
     public static int gop(int a, int b) {
