@@ -1,6 +1,8 @@
 package org.oop;
 
 public class MP {
+    //속성과 기능을 하나의 캡슐처럼 합침 - 캡술화
+    // 캡슐화는 보수가 굉장히 편함
     int volume;
     boolean isOn = false;
 
@@ -52,4 +54,5 @@ public class MP {
             System.out.println("실행중인 프로그램 X");
         }
     }
+
 }

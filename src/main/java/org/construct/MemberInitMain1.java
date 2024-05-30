@@ -1,12 +1,17 @@
 package org.construct;
 
-public class MemberInitMain3 {
+public class MemberInitMain1 {
     public static void main(String[] args) {
         MemberInit mI1 = new MemberInit();
         MemberInit mI2 = new MemberInit();
 
-      mI1.initMember(mI1,"빈이",29,275);
-        mI2.initMember(mI2,"솔이",28,245);
+        mI1.name = "빈";
+        mI1.age = 29;
+        mI1.size = 275;
+
+        mI2.name = "솔";
+        mI2.age = 28;
+        mI2.size = 245;
 
         MemberInit[] mems = {mI1, mI2};
         for (MemberInit mem : mems) {
@@ -15,6 +20,4 @@ public class MemberInitMain3 {
 
 
     }
-
-
 }

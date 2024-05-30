@@ -3,13 +3,11 @@ package org.construct;
 public class MemberInit {
     String name;
     int age;
-    int grade;
+    int size;
 
-
-
-      void initMember(String name, int age, int grade) {
+      void initMember(MemberInit member, String name, int age, int size) {
         this.name = name;
         this.age = age;
-        this.grade = grade;
+          this.size = size;
     }
 }

@@ -1,32 +1,24 @@
 package org.construct;
 
-import java.lang.reflect.Member;
-
 public class MemberInitMain2 {
     public static void main(String[] args) {
+        MemberInit mI1 = new MemberInit();
+        MemberInit mI2 = new MemberInit();
 
-        MemberInit member1 = new MemberInit();
-        initMember(member1 ,"빈이",30,100);
+        initMember(mI1,"빈이",29,275);
+        initMember(mI2,"솔이",28,245);
 
-        MemberInit member2 = new MemberInit();
-        initMember(member2 ,"솔이",29,90);
-
-        MemberInit[] members = {member1, member2};
-
-
-        for (MemberInit s : members) {
-            System.out.println("이름:" + s.name + " 나이:" + s.age + " 성적:" + s.grade);
-
+        MemberInit[] mems = {mI1, mI2};
+        for (MemberInit mem : mems) {
+            System.out.println("이름 = " + mem.name + " | 나이 = " + mem.age + " | 사이즈 = " + mem.size);
         }
 
+
     }
 
-    static void initMember(MemberInit member, String name, int age, int grade) {
+    static void initMember(MemberInit member, String name, int age, int size) {
         member.name = name;
         member.age = age;
-        member.grade = grade;
+        member.size = size;
     }
-
-
-
 }
