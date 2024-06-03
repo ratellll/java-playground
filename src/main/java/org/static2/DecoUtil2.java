@@ -1,8 +1,9 @@
 package org.static2;
 
 public class DecoUtil2 {
-    public static String deco(String str) {
-        String result = "*" + str + "*";
-        return result;
+
+
+    public  static String deco(String str) {
+        return "*" + str + "*";
     }
 }
