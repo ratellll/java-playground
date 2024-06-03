@@ -8,4 +8,5 @@ public class Data1 {
         this.name = name;
         count++;
     }
+
 }
