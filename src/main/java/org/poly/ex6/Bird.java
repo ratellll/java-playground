@@ -1,0 +1,15 @@
+package org.poly.ex6;
+
+public class Bird extends AbstractAnimal implements Fly {
+
+
+    @Override
+    public void sound() {
+        System.out.println("Jack- Jack");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("So High");
+    }
+}
