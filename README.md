@@ -239,3 +239,17 @@ OCP
 
 
 모든 클래스의 부모는 Object라고 말해도된다
+
+
+* 사이드 이펙트란
+* ex)  Address a = new Address("서울");
+  Address b = a; // 참조값 공유
+
+
+        System.out.println("A = " +a);
+        System.out.println("B = " +b);
+
+        b.setValue("부산");
+
+        System.out.println("A = " +a); // a의값도 부산으로 변경됨 ) 사이드이펙트 발생
+        System.out.println("B = " +b);
