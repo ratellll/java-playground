@@ -1,6 +1,6 @@
 package org.exception.basic.checked;
 
-public class Sevice {
+public class Service {
     Client client = new Client();
 
 
